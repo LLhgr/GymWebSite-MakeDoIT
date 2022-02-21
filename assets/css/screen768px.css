@@ -1,0 +1,163 @@
+@media only screen and (max-width: 768px) 
+{
+
+/*========== MENU ==========*/
+
+body
+{
+    overflow-x: hidden;
+}
+
+.btn__mobile
+{
+    z-index: 10;
+    display: block;
+    cursor: pointer;
+}
+
+    .btn__mobile.active .line1
+    {
+        transform: rotate(-45deg) translate(-8px, 8px);
+    }
+    .btn__mobile.active .line2
+    {
+        opacity: 0;
+    }
+    .btn__mobile.active .line3
+    {
+        transform: rotate(45deg) translate(-5px, -7px);
+    }
+
+.menu__list
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-left: 0;
+    width: 40%;
+    height: 100%;
+    background-color: #1d1d1d;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(100%);
+    transition: transform .3s ease-in;
+}
+
+    .menu__list.active
+    {
+        transform: translateX(0);
+    }
+
+.menu__list__item
+{
+    margin-left: 0;
+    font-size: 15pt;
+    text-transform: uppercase;
+    opacity: 0;
+    margin: 15px 0;
+}
+
+.menu__list :not(:nth-child(1)):after
+    {
+        content: "";
+        position: absolute;
+        background-color: var(--second-color);
+        height: 3px;
+        width: 100%;
+        left: 0;
+        bottom: -5px;
+        transition: .3s;
+    }
+
+    @keyframes menu__listFade
+    {
+        from
+        {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to
+        {
+            opacity: 1;
+            transform: translate(0);
+        }
+    }
+
+
+/*========== HEADER CONTENT ==========*/
+
+    .header__description
+    {
+        width: 50%;
+    }
+
+/*========== AboutUs CONTENT ==========*/
+
+.aboutUs
+{
+    min-height: 500px;
+}
+
+.aboutUs__content__right
+{
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.aboutUs__tittle
+{
+    font-size: 30pt;
+}
+.aboutUs__description
+{
+    width: 100%;
+}
+
+.aboutUs__btn
+{
+    margin-top: 30px;
+}
+
+/*========== Plans CONTENT ==========*/
+
+.card
+{
+    width: 220px;
+    height: 480px;
+}
+
+.card__tittle
+{
+    font-size: 20pt;
+}
+
+.card__price
+{
+    font-size: 10pt;
+}
+
+.card__price strong
+{
+    font-size: 15pt;
+}
+
+.card__icon
+{
+    font-size: 10px;
+}
+
+.card__item
+{
+    font-size: 10pt;
+}
+
+.plans__btn
+{
+    font-size: 9pt;
+    width: 150px;
+}
+
+
+
+}

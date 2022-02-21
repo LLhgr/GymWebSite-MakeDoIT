@@ -1,0 +1,135 @@
+@media only screen and (max-width: 480px) 
+{
+
+.menu
+{
+    padding: 0 20px;
+}
+
+
+.header__content__aside
+{
+    margin: 150px 0 0 0;
+    align-items: center;
+}
+
+.header__tittle
+{
+    font-size: 40pt;
+    text-align: center;
+    margin: 0;
+}
+
+.header__description
+{
+    font-size: 10pt;
+    text-align: center;
+    width: 80%;
+}
+
+/*====================== ABOUT US CONTENT ======================*/
+
+.aboutUs
+{
+}
+
+.aboutUs__content
+{
+}
+
+.aboutUs__img
+{
+    background-position: center;
+}
+
+.aboutUs__content__right
+{
+    width: 50%;
+}
+
+.aboutUs__tittle
+{
+    font-size: 20pt;
+    text-transform: uppercase;
+}
+
+.aboutUs__description
+{
+    font-size: 10pt;
+}
+
+.aboutUs__tag
+{
+    text-align: center;
+    font-size: 10pt;
+    width: 90px;
+}
+
+/*====================== PLANS CONTENT ======================*/
+
+.plans__card
+{
+    flex-direction: column;
+}
+
+.card
+{
+    width: 300px;
+    height: 550px;
+    margin: 50px 0 0 0;
+}
+
+.card__tittle
+{
+    font-size: 25pt;
+}
+
+.card__price strong
+{
+    font-size: 20pt;
+}
+
+.card__icon
+{
+    font-size: 20px;
+}
+
+.card__list
+{
+    font-size: 15pt;
+}
+
+/*====================== WORK CONTENT ======================*/
+
+.workWithUs__content
+{
+    margin: 100px 0;
+}
+
+
+.contactAndTrial__content
+{
+    margin: 50px 0;
+}
+
+.contactAndTrial__form
+{
+    flex-direction: column;
+}
+
+.contact__content, .trial__content
+{
+    width: 100%;  
+}
+
+
+.contact__btn, .trial__btn
+{
+    align-self: center;
+}
+
+.trial__btn
+{
+    margin-bottom: 50px;
+}
+}
